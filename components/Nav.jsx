@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const NAV_LINKS = [
   { href: '#services', label: 'Services' },
@@ -13,6 +13,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState('');
+  const scrollLockY = useRef(0);
 
   useEffect(() => {
     function onScroll() {
@@ -35,6 +36,25 @@ export default function Nav() {
     }
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
+
+  /* iOS-compatible scroll lock — overflow:hidden alone doesn't work on iOS */
+  useEffect(() => {
+    if (open) {
+      scrollLockY.current = window.scrollY;
+      document.body.style.overflow  = 'hidden';
+      document.body.style.position  = 'fixed';
+      document.body.style.top       = `-${scrollLockY.current}px`;
+      document.body.style.left      = '0';
+      document.body.style.right     = '0';
+    } else {
+      document.body.style.overflow  = '';
+      document.body.style.position  = '';
+      document.body.style.top       = '';
+      document.body.style.left      = '';
+      document.body.style.right     = '';
+      window.scrollTo(0, scrollLockY.current);
+    }
   }, [open]);
 
   function handleAnchor(e, href) {

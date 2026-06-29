@@ -36,7 +36,7 @@ export const metadata = {
   },
   icons: {
     icon: [{ url: '/images/favicon.svg', type: 'image/svg+xml' }],
-    apple: '/images/favicon.svg',
+    apple: '/images/apple-touch-icon.png',
   },
   other: {
     'geo.region': 'US-FL',
