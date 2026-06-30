@@ -1,5 +1,6 @@
 import { Outfit } from 'next/font/google';
 import { Geist_Mono } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
 import CursorFollower from '@/components/CursorFollower';
@@ -91,6 +92,13 @@ export default function RootLayout({ children }) {
         <PortfolioFloatBtn />
         <CursorFollower />
         <Analytics />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4DL82KL3S4" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4DL82KL3S4');
+        `}</Script>
       </body>
     </html>
   );
