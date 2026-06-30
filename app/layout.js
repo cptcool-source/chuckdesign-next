@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 
 export const viewport = {
   themeColor: '#111111',
+  colorScheme: 'dark light',
 };
 
 export const metadata = {
@@ -30,7 +31,7 @@ export const metadata = {
   metadataBase: new URL('https://chuckdesign.com'),
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'chuck design — Designs Made to Lead',
+    title: 'chuck design — Designs Built to Lead',
     description: 'Web design and development for small businesses in North Port and Southwest Florida.',
     type: 'website',
     url: 'https://chuckdesign.com',
