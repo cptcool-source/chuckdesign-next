@@ -19,21 +19,16 @@ export default function About() {
               </div>
             </header>
 
-            <blockquote className="about__quote reveal-up">
-              "Design without strategy is decoration.
-              Strategy without design is invisible."
-            </blockquote>
-
             <p className="about__body reveal-up">
-              I'm Charles Spivey — a web designer based in North Port, FL. I work directly with
-              local business owners to build sites that attract customers and hold up over time.
-              No account managers, no offshore teams. You talk to the person who builds your site.
+              I'm Charles — a web designer in SW Florida. I work directly with local business
+              owners, building sites that bring in customers and hold up over time. No account
+              managers, no layers to get through for support. You talk to the person who builds your site.
             </p>
 
             <p className="about__body reveal-up" style={{ '--delay': '60ms' }}>
-              My background is in both design and development, which means the site you get looks
-              intentional and functions correctly — not one at the expense of the other. I've built
-              sites for restaurants, service businesses, and professional practices across Southwest Florida.
+              I design and build, so the site looks right and works right — not one at the expense
+              of the other. I've built sites for restaurants, trades, and professional practices
+              across Southwest Florida.
             </p>
 
             <a

@@ -590,6 +590,8 @@ body::after {
 .svc-card__list li::before { content: ''; position: absolute; left: 0; top: 7px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
 .svc-card--wide .svc-card__icon-wrap { flex-shrink: 0; }
 .svc-card--wide .svc-card__title { margin-bottom: 6px; }
+.svc-card__price { font-family: var(--font-geist-mono), monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; color: var(--card-color,var(--accent)); margin-top: 10px; }
+.svc-card--featured .svc-card__price { margin-top: 16px; }
 
 /* ── Card reveal variants ──────────────────────────────────────────────────── */
 .svc-card.reveal-up { transform: translateY(36px) scale(0.98); transition: opacity 0.65s var(--ease-out) var(--delay,0ms), transform 0.65s var(--ease-out) var(--delay,0ms); }

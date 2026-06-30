@@ -5,7 +5,7 @@ const STEPS = [
   {
     num: '01',
     title: 'Consult',
-    desc: 'A 30-minute call to learn your business, your customers, and what you need your site to do. Free, no pressure.',
+    desc: 'We email back and forth — your business, your customers, what you need the site to do. Free, no pressure.',
   },
   {
     num: '02',

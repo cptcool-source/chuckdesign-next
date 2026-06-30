@@ -69,10 +69,10 @@ export default function Contact() {
           <p className="section-eyebrow">Get in touch</p>
           <div className="contact-rule reveal-up" style={{ '--delay': '100ms' }} aria-hidden="true" />
           <div className="title-reveal">
-            <h2 className="section-title">Ready to get started?</h2>
+            <h2 className="section-title">Tell me about your project.</h2>
           </div>
           <p className="section-sub">
-            Tell us about your project. If it's a fit, we'll schedule a free 30-minute call.
+            I'll email back and forth with you until we both know if it's a fit. No pitch, no pressure.
           </p>
         </header>
 
@@ -182,7 +182,7 @@ export default function Contact() {
             </div>
             <div className="aside-promise">
               <SealCheck weight="duotone" aria-hidden="true" />
-              <p>No commitment required. The consult is free and there's no pressure to hire.</p>
+              <p>No commitment. Reaching out costs nothing, and there's no pressure to hire.</p>
             </div>
           </aside>
         </div>

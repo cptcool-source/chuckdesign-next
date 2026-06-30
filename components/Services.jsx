@@ -7,7 +7,7 @@ const SERVICES = [
     id: 'web-design',
     Icon: Monitor,
     title: 'Web Design & Development',
-    desc: 'Custom sites built from scratch — designed to load fast, look great on every device, and turn visitors into customers.',
+    desc: 'Built from scratch — no templates, no shortcuts. Fast, clean, and made to turn visitors into customers.',
     featured: true,
     list: [
       'Designed from scratch — no templates, no page builders',
@@ -15,27 +15,31 @@ const SERVICES = [
       'Technical SEO and Google Analytics built in from day one',
       'Fast load times — 90+ PageSpeed score at launch',
     ],
+    price: '$1,600–$7,500, estimated. Most sites land around $2,200–$4,000.',
     color: '#E05C3A',
   },
   {
     id: 'seo',
     Icon: MagnifyingGlassPlus,
     title: 'Built for Search',
-    desc: 'Every site ships with the technical foundation Google needs — proper structure, schema markup, fast load times, and Search Console connected at launch.',
+    desc: 'Every site ships SEO-focused — what Google needs to find it: proper structure, schema markup, fast load times, Search Console connected at launch.',
+    price: 'Included with every site. No separate fee.',
     color: '#4A90D9',
   },
   {
     id: 'gbp',
     Icon: MapPin,
     title: 'Google Business Profile',
-    desc: 'A fully optimized GBP listing — set up, verified, and handed off to you. Shows up right in Google Maps and search results when local customers are looking.',
+    desc: 'Your listing, set up, verified, and handed off. Shows up on Maps and search when someone nearby is looking.',
+    price: '$200, one-time, estimated.',
     color: '#2D9E6B',
   },
   {
     id: 'social',
     Icon: ShareNetwork,
     title: 'Social Profile Launch',
-    desc: 'The right accounts created, your branding applied, and everything handed off ready to use. No content management — just a professional presence, set up correctly from the start.',
+    desc: 'The right accounts created, your branding applied, handed off ready to use. No long-term content writing — just a professional presence, set up right.',
+    price: '$150, one-time, estimated. Covers up to two platforms.',
     color: '#8B5CF6',
   },
   {
@@ -44,6 +48,7 @@ const SERVICES = [
     title: 'Site Care Plan',
     desc: 'Monthly backups, updates, and uptime monitoring so your site stays healthy. Routine requests handled within 48 hours. Urgent issues — site down, broken form — within 24 hours. One person, no tickets.',
     wide: true,
+    price: '$75–$100/month, estimated.',
     color: '#F59E0B',
   },
 ];
@@ -95,7 +100,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="section-sub">
-            No subscriptions, no hidden fees. One person who builds it, owns it, and keeps it running.
+            Most projects run $1,800–$6,000, depending on size. Estimates below — your number depends on what you need.
           </p>
         </header>
 
@@ -120,11 +125,13 @@ export default function Services() {
                   <ul className="svc-card__list">
                     {svc.list.map(item => <li key={item}>{item}</li>)}
                   </ul>
+                  <p className="svc-card__price">{svc.price}</p>
                 </div>
               ) : (
                 <>
                   <h3 className="svc-card__title">{svc.title}</h3>
                   <p className="svc-card__desc">{svc.desc}</p>
+                  <p className="svc-card__price">{svc.price}</p>
                 </>
               )}
             </div>
