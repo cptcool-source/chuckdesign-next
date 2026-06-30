@@ -568,6 +568,10 @@ body::after {
 .footer-copy { font-size: 12px; color: var(--text-faint); margin-right: auto; }
 .footer-email { font-size: 12px; color: var(--text-faint); transition: color 0.2s; }
 .footer-email:hover { color: var(--accent); }
+.footer-social { display: flex; align-items: center; gap: 2px; }
+.footer-social-link { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: var(--radius-sm); color: var(--text-faint); transition: color 0.2s, background 0.2s; }
+.footer-social-link:hover { color: var(--accent); background: rgba(224,92,58,0.08); }
+.footer-social-x { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; color: var(--accent); font-size: 15px; cursor: default; line-height: 1; }
 
 /* ── Scroll reveal ─────────────────────────────────────────────────────────── */
 .reveal-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s var(--ease-out) var(--delay,0ms), transform 0.7s var(--ease-out) var(--delay,0ms); }
@@ -702,6 +706,7 @@ body::after {
   .form-row--2 { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
   .footer-copy  { margin-right: 0; }
+  .footer-social { margin-top: 4px; }
   .contact__layout .contact__aside { flex-direction: column; }
   .aside-block { border-top: 1px solid var(--border); padding-top: 20px; }
   .aside-block:first-child { border-top: 1px solid var(--border); padding-top: 20px; }

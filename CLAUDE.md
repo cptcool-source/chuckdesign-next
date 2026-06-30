@@ -36,7 +36,7 @@ components/
   Work.jsx          'use client' — drag scroll rail, lightbox state
   About.jsx         'use client' — Phosphor icons (createContext at module eval)
   Contact.jsx       'use client' — controlled form, Formspree fetch
-  Footer.jsx        server component — static
+  Footer.jsx        'use client' — Phosphor social icons, social links
   Lightbox.jsx      'use client' — open/close, zoom on wheel/click
   PortfolioFloatBtn.jsx  client — Next.js Link to /portfolio
 hooks/
