@@ -217,7 +217,8 @@ export default function PortfolioPage() {
             chuck<em> design</em>
           </Link>
           <span className="pf-footer-copy">
-            &copy; 2026 chuck design &nbsp;&middot;&nbsp; North Port, FL 34291
+            &copy; 2026 chuck design &nbsp;&middot;&nbsp; North Port, FL 34291 &nbsp;&middot;&nbsp;{' '}
+            <Link href="/privacy" style={{ color: 'inherit', textDecoration: 'underline' }}>Privacy</Link>
           </span>
           <a href="mailto:charles@chuckdesign.com" className="pf-footer-email">
             charles@chuckdesign.com

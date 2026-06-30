@@ -49,7 +49,7 @@ export default function About() {
           <div className="about__areas">
             <div className="about__portrait reveal-up">
               <Image
-                src="/images/family.png"
+                src="/images/family.jpg"
                 alt="Charles Spivey with family in North Port, FL"
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
