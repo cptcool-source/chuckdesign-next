@@ -49,7 +49,7 @@ export default function Contact() {
       });
       const json = await res.json();
       if (res.ok) {
-        setStatus({ type: 'success', msg: 'Message sent — Charles will be in touch within 24 hours.' });
+        setStatus({ type: 'success', msg: 'Message sent — Charles will be in touch within 72 hours.' });
         setValues({ name: '', email: '', phone: '', industry: '', message: '' });
         setErrors({});
       } else {
@@ -178,11 +178,11 @@ export default function Contact() {
             </div>
             <div className="aside-block">
               <p className="aside-label">Response time</p>
-              <p className="aside-value">Within 24 hours, usually same day</p>
+              <p className="aside-value">Typically within 72 hours</p>
             </div>
             <div className="aside-promise">
               <SealCheck weight="duotone" aria-hidden="true" />
-              <p>No commitment required. The consult call is free and there's no pressure to hire.</p>
+              <p>No commitment required. The consult is free and there's no pressure to hire.</p>
             </div>
           </aside>
         </div>
