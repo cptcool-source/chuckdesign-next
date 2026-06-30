@@ -32,45 +32,45 @@ export default function Hero() {
           scrollTrigger: {
             trigger:      sectionRef.current,
             start:        'top top',
-            end:          '+=250%',
+            end:          '+=180%',
             pin:          true,
             scrub:        1.2,
             anticipatePin: 1,
           },
         });
 
-        // Orb swells over the full scroll range
+        // Orb dims slightly as chapters take focus
         tl.to(orbRef.current,
-          { opacity: 0.44, scale: 1.12, ease: 'none', duration: 10 },
+          { opacity: 0.30, scale: 1.04, ease: 'none', duration: 7 },
           0
         );
 
         // Chapter 2: DESIGNS slams in from left
         tl.fromTo(ch1Ref.current,
           { opacity: 0, x: -80, skewX: -3 },
-          { opacity: 1, x: 0, skewX: 0, ease: 'power3.out', duration: 1.5 },
-          1.5
+          { opacity: 1, x: 0, skewX: 0, ease: 'power3.out', duration: 1.2 },
+          0.5
         );
 
-        // Chapter 3: made to rises
+        // Chapter 3: built to rises
         tl.fromTo(ch2Ref.current,
           { opacity: 0, y: 50 },
-          { opacity: 1, y: 0, ease: 'power2.out', duration: 1.2 },
-          4.0
+          { opacity: 1, y: 0, ease: 'power2.out', duration: 1.0 },
+          2.5
         );
 
         // Chapter 4: lead. drops in
         tl.fromTo(ch3Ref.current,
           { opacity: 0, y: 60 },
-          { opacity: 1, y: 0, ease: 'power2.out', duration: 1.2 },
-          6.0
+          { opacity: 1, y: 0, ease: 'power2.out', duration: 1.0 },
+          3.8
         );
 
         // Unpin reveal: subtext + CTAs
         tl.fromTo(revealRef.current,
           { opacity: 0, y: 28 },
-          { opacity: 1, y: 0, ease: 'power2.out', duration: 1.0 },
-          8.2
+          { opacity: 1, y: 0, ease: 'power2.out', duration: 0.8 },
+          5.2
         );
 
         return () => {};
@@ -81,7 +81,7 @@ export default function Hero() {
     mm.add(
       '(max-width: 767px), (prefers-reduced-motion: reduce)',
       () => {
-        gsap.set(orbRef.current, { opacity: 0.28, scale: 1 });
+        gsap.set(orbRef.current, { opacity: 0.45, scale: 1 });
         gsap.set(
           [ch1Ref.current, ch2Ref.current, ch3Ref.current, revealRef.current],
           { opacity: 1, x: 0, y: 0, skewX: 0 }
@@ -102,7 +102,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-chapters">
           <span ref={ch1Ref} className="hero-ch hero-ch1">DESIGNS</span>
-          <span ref={ch2Ref} className="hero-ch hero-ch2">made to</span>
+          <span ref={ch2Ref} className="hero-ch hero-ch2">built to</span>
           <span ref={ch3Ref} className="hero-ch hero-ch3"><em>lead.</em></span>
         </div>
 
