@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const viewport = {
-  themeColor: '#FAFAF8',
+  themeColor: '#111111',
 };
 
 export const metadata = {
