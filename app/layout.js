@@ -92,12 +92,12 @@ export default function RootLayout({ children }) {
         <PortfolioFloatBtn />
         <CursorFollower />
         <Analytics />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4DL82KL3S4" strategy="afterInteractive" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-X5EHPW0YEP" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-4DL82KL3S4');
+          gtag('config', 'G-X5EHPW0YEP');
         `}</Script>
       </body>
     </html>
