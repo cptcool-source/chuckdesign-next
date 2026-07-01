@@ -3,6 +3,7 @@ import { Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import CursorFollower from '@/components/CursorFollower';
 import PortfolioFloatBtn from '@/components/PortfolioFloatBtn';
 
@@ -92,6 +93,7 @@ export default function RootLayout({ children }) {
         <PortfolioFloatBtn />
         <CursorFollower />
         <Analytics />
+        <SpeedInsights />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-X5EHPW0YEP" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
